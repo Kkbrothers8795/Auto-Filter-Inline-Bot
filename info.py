@@ -31,7 +31,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = "mongodb://root:Kirodewal123a@140.238.240.149"
+DATABASE_URI = "mongodb://root:Kirodewal123a@140.238.240.149:27017/"
 DATABASE_NAME = "FileStreamBot"
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
